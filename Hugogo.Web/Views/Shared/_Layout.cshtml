@@ -1,72 +1,79 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Hugogo - 雨果果</title>
-    <link href="~/Content/layui/css/layui.css" rel="stylesheet" />
-    <script src="~/Content/layui/layui.all.js"></script>
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
-</head>
-<body class="layui-layout-body">
-    <div class="layui-layout layui-layout-admin">
-        <div class="layui-header">
-            <div class="layui-logo"><a href="../Home/Index" class="layui-logo">Hugogo - 雨果果</a></div>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Hugogo - 雨果果</title>
+        <link href="~/Content/layui/css/layui.css" rel="stylesheet" />
+        <script src="~/Content/layui/layui.js"></script>
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+    </head>
+    <body class="layui-layout-body">
+        <div class="layui-layout layui-layout-admin">
+            <div class="layui-header">
+                <div class="layui-logo"><a href="../Home/Index" class="layui-logo">Hugogo - 雨果果</a></div>
             
-            <ul class="layui-nav layui-layout-right">
-                <li class="layui-nav-item">
-                    <a href="javascript:;">
-                        <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
-                        江江
-                    </a>
-                    <dl class="layui-nav-child">
-                        <dd><a href="">基本资料</a></dd>
-                        <dd><a href="">安全设置</a></dd>
-                    </dl>
-                </li>
-                <li class="layui-nav-item"><a href="">退了</a></li>
-            </ul>
-        </div>
-
-        <div class="layui-side layui-bg-black">
-            <div class="layui-side-scroll">
-                <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
-                <ul class="layui-nav layui-nav-tree" lay-filter="test">
-                    <li class="layui-nav-item layui-nav-itemed">
-                        <a class="" href="javascript:;">基础管理</a>
-                        <dl class="layui-nav-child">
-                            <dd><a href="../User/Index">用户管理</a></dd>
-                            <dd><a href="../User/EditUser">新增用户</a></dd>
-                            <dd><a href="../Setting/Index">配置信息</a></dd>
-                            <dd><a href="../Supplier/Index">供应商信息</a></dd>
-                            <dd><a href="../Product/Index">商品信息</a></dd>
-                        </dl>
-                    </li>
+                <ul class="layui-nav layui-layout-right">
                     <li class="layui-nav-item">
-                        <a href="javascript:;">订单管理</a>
+                        <a href="javascript:;">
+                            <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+                            江江
+                        </a>
                         <dl class="layui-nav-child">
-                            <dd><a href="../User/Index">订单管理</a></dd>
+                            <dd><a href="">基本资料</a></dd>
+                            <dd><a href="">安全设置</a></dd>
                         </dl>
                     </li>
-                    <li class="layui-nav-item"><a href="">云市场</a></li>
-                    <li class="layui-nav-item"><a href="">发布商品</a></li>
+                    <li class="layui-nav-item"><a href="">退了</a></li>
                 </ul>
             </div>
-        </div>
-        <div class="layui-body">
-            <!-- 内容主体区域 -->
-            <div style="padding: 15px;">
+
+            <div class="layui-side layui-bg-black">
+                <div class="layui-side-scroll">
+                    <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+                    <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                        <li class="layui-nav-item layui-nav-itemed">
+                            <a class="" href="javascript:;">基础管理</a>
+                            <dl class="layui-nav-child">
+                                <dd><a href="../User/Index">用户管理</a></dd>
+                                <dd><a href="../User/EditUser">新增用户</a></dd>
+                                <dd><a href="../Setting/Index">配置信息</a></dd>
+                                <dd><a href="../Supplier/Index">供应商信息</a></dd>
+                                <dd><a href="../Product/Index">商品信息</a></dd>
+                            </dl>
+                        </li>
+                        <li class="layui-nav-item">
+                            <a href="javascript:;">订单管理</a>
+                            <dl class="layui-nav-child">
+                                <dd><a href="../User/Index">订单管理</a></dd>
+                            </dl>
+                        </li>
+                        <li class="layui-nav-item"><a href="">云市场</a></li>
+                        <li class="layui-nav-item"><a href="">发布商品</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="layui-body">
+                <!-- 内容主体区域 -->
+                <div style="padding: 15px;">
                     @RenderBody()
                
+                </div>
+            </div>
+
+            <div class="layui-footer">
+                <!-- 底部固定区域 -->
+                © layui.com - 底部固定区域
             </div>
         </div>
-
-        <div class="layui-footer">
-            <!-- 底部固定区域 -->
-            © layui.com - 底部固定区域
-        </div>
-    </div>
-</body>
+    </body>
 </html>
+<script>
+    //JavaScript代码区域
+    layui.use('element', function () {
+        var element = layui.element;
+
+    });
+</script>

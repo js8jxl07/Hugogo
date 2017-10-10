@@ -272,7 +272,6 @@
     <Content Include="Content\layui\images\face\71.gif" />
     <Content Include="Content\layui\images\face\8.gif" />
     <Content Include="Content\layui\images\face\9.gif" />
-    <Content Include="Content\layui\layui.all.js" />
     <Content Include="Content\layui\layui.js" />
     <Content Include="Content\layui\lay\modules\carousel.js" />
     <Content Include="Content\layui\lay\modules\code.js" />
