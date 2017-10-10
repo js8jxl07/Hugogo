@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{09830E87-7E84-4B0A-8E41-DB6BBBB78CB9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hugogo.Business</RootNamespace>
+    <AssemblyName>Hugogo.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tables\UserBusiness.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hugogo.Common\Hugogo.Common.csproj">
+      <Project>{45c07bd3-9bdd-4e46-ab9c-b7584043dd42}</Project>
+      <Name>Hugogo.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hugogo.DataAccess\Hugogo.DataAccess.csproj">
+      <Project>{0ec65433-8b47-466b-ac34-2ae0e3031015}</Project>
+      <Name>Hugogo.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hugogo.IBusiness\Hugogo.IBusiness.csproj">
+      <Project>{2dafe3d4-fddf-4b3c-90e5-f047feec09bd}</Project>
+      <Name>Hugogo.IBusiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hugogo.Injector\Hugogo.Injector.csproj">
+      <Project>{be9b49ed-9d11-4cce-9521-24988fb962e9}</Project>
+      <Name>Hugogo.Injector</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hugogo.Model\Hugogo.Model.csproj">
+      <Project>{c328ae5f-0e03-401d-aa4e-f8c60fac5e6e}</Project>
+      <Name>Hugogo.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
