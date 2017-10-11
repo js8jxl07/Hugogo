@@ -49,8 +49,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="ConvertHelper.cs" />
+    <Compile Include="ExternalModel\GetIDCardDetailModel.cs" />
+    <Compile Include="MenuModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tables\ConfigurationsModel.cs" />
     <Compile Include="Tables\User.cs" />
+    <Compile Include="UserInfoModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
